@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn C from Scratch to Mastery</title>
+  <meta name="description" content="A friendly, professional, and excellent guide to learning C programming from absolute beginners to masters." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">C<span>Mastery</span></a>
+      <nav class="nav">
+        <a href="#beginner">Beginner</a>
+        <a href="#intermediate">Intermediate</a>
+        <a href="#advanced">Advanced</a>
+        <a href="#mastery">Mastery</a>
+        <a href="#start" class="btn-nav">Start Learning</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">From zero to systems-level confidence</p>
+        <h1>Learn <span class="accent">C</span> from Scratch<br>to Mastery</h1>
+        <p class="lead">
+          A friendly, crystal-clear, and professional path designed by a teacher who wants you to truly understand how computers work.
+        </p>
+        <div class="hero-actions">
+          <a href="#start" class="btn btn-primary">Begin the Journey</a>
+          <a href="#curriculum" class="btn btn-ghost">View Curriculum</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>4</strong> Progressive Phases</div>
+          <div><strong>Zero</strong> Prior Experience Needed</div>
+          <div><strong>Real</strong> Understanding, Not Just Syntax</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why C -->
+    <section class="section why" id="why">
+      <div class="container">
+        <h2>Why learn C in 2026?</h2>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Foundations of Everything</h3>
+            <p>Operating systems, databases, browsers, game engines, and embedded devices are still built on C or languages that grew from it. Mastering C gives you superpowers everywhere else.</p>
+          </article>
+          <article class="card">
+            <h3>True Understanding</h3>
+            <p>C forces you to understand memory, pointers, and how the machine really works. Once you get it, higher-level languages become much easier and clearer.</p>
+          </article>
+          <article class="card">
+            <h3>Career Advantage</h3>
+            <p>Systems programming, security, firmware, high-performance computing, and low-level tooling all value people who can write solid C.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section class="section curriculum" id="curriculum">
+      <div class="container">
+        <h2>Your Learning Path</h2>
+        <p class="section-lead">We move step by step. No jumping ahead until the foundations feel solid.</p>
+
+        <div class="phases">
+          <div class="phase" id="beginner">
+            <div class="phase-number">01</div>
+            <div class="phase-content">
+              <h3>Foundations — Beginner</h3>
+              <p>We start gently. You will set up your environment, write your first program, and understand variables, types, operators, conditionals, loops, and functions.</p>
+              <ul>
+                <li>Installing a compiler (GCC / Clang) and a good editor</li>
+                <li>Hello World and how compilation works</li>
+                <li>Data types, variables, constants</li>
+                <li>Operators and expressions</li>
+                <li>if / else, switch, while, for, do-while</li>
+                <li>Writing and calling functions</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="phase" id="intermediate">
+            <div class="phase-number">02</div>
+            <div class="phase-content">
+              <h3>Core Concepts — Intermediate</h3>
+              <p>This is where C becomes powerful and fun. Pointers, arrays, strings, structures, and memory will become your tools.</p>
+              <ul>
+                <li>Arrays and multi-dimensional arrays</li>
+                <li>Strings and the <string.h> library</li>
+                <li>Pointers — the heart of C (explained carefully)</li>
+                <li>Pointer arithmetic and arrays</li>
+                <li>Structures, unions, and typedef</li>
+                <li>Reading and writing files</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="phase" id="advanced">
+            <div class="phase-number">03</div>
+            <div class="phase-content">
+              <h3>Going Deeper — Advanced</h3>
+              <p>Dynamic memory, data structures, the preprocessor, multi-file projects, and professional tooling.</p>
+              <ul>
+                <li>malloc, calloc, realloc, free</li>
+                <li>Linked lists, stacks, queues</li>
+                <li>Function pointers</li>
+                <li>Preprocessor directives and macros</li>
+                <li>Header files and modular design</li>
+                <li>Debugging with gdb and sanitizers</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="phase" id="mastery">
+            <div class="phase-number">04</div>
+            <div class="phase-content">
+              <h3>Mastery</h3>
+              <p>You now write C like a professional. Focus turns to real projects, performance, safety, and systems thinking.</p>
+              <ul>
+                <li>Common pitfalls and how to avoid them</li>
+                <li>Memory safety and defensive programming</li>
+                <li>Performance mindset and profiling</li>
+                <li>Building a small language, interpreter, or tool</li>
+                <li>Working with the Linux/Unix system call interface</li>
+                <li>Reading and understanding existing C codebases</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- First steps -->
+    <section class="section start" id="start">
+      <div class="container">
+        <h2>Your First Program</h2>
+        <p class="section-lead">Let’s write the classic “Hello, World” together. Copy this into a file named <code>hello.c</code>.</p>
+
+        <pre class="code-block"><code>#include <stdio.h>
+
+int main(void) {
+    printf("Hello, World!\n");
+    return 0;
+}</code></pre>
+
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">1</span>
+            <div>
+              <h4>Save the file</h4>
+              <p>Create <code>hello.c</code> in any folder.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">2</span>
+            <div>
+              <h4>Compile</h4>
+              <p>Open a terminal and run: <code>gcc hello.c -o hello</code></p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">3</span>
+            <div>
+              <h4>Run</h4>
+              <p>Execute: <code>./hello</code> (or <code>hello.exe</code> on Windows)</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="encouragement">Congratulations — you just wrote and ran your first C program. That is a real milestone.</p>
+      </div>
+    </section>
+
+    <!-- Teaching philosophy -->
+    <section class="section philosophy">
+      <div class="container narrow">
+        <h2>How we teach</h2>
+        <p>We never throw jargon at you without explaining it. Every concept is introduced with a clear reason, a simple example, and then a slightly deeper one. Mistakes are treated as valuable teachers, not failures.</p>
+        <p>You will see the same idea from different angles until it clicks. Pointers, memory, and the relationship between arrays and pointers receive special care — because once those feel natural, the rest of C becomes enjoyable.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Learn C from Scratch to Mastery — built with care for every learner.</p>
+      <p class="small">Open source on GitHub · Deploy freely on Vercel</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
